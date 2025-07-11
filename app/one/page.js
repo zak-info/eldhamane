@@ -312,18 +312,9 @@ const HajjUmrahLanding = () => {
                                     <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center">
                                         <Phone className="w-6 h-6 text-white" />
                                     </div>
-                                    <div >
+                                    <div>
                                         <h4 className="font-semibold text-yellow-400">الهاتف</h4>
-                                        <p dir='rtl' className="text-gray-300">0550836251 </p>
-                                    </div>
-                                </div>
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center">
-                                        <Phone className="w-6 h-6 text-white" />
-                                    </div>
-                                    <div >
-                                        <h4 className="font-semibold text-yellow-400">الهاتف</h4>
-                                        <p dir='rtl' className="text-gray-300">0771860242 </p>
+                                        <p className="text-gray-300">+213 </p>
                                     </div>
                                 </div>
 
