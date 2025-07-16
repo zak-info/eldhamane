@@ -15,12 +15,6 @@ const HajjUmrahLanding = () => {
     }, []);
 
     const services = [
-        // {
-        //     icon: "🕋",
-        //     title: "رحلات الحج",
-        //     description: "نقدم باقات شاملة لأداء فريضة الحج مع إقامة مريحة وخدمات متكاملة لضمان رحلة مباركة ومطمئنة.",
-        //     color: "from-amber-400 to-yellow-600"
-        // },
         {
             icon: "🌙",
             title: "رحلات العمرة",
@@ -54,7 +48,7 @@ const HajjUmrahLanding = () => {
     ];
 
     const features = [
-        { icon: <Star className="w-8 h-8" />, title: "خبرة 15 عام", desc: "خبرة طويلة في تنظيم رحلات العمرة" },
+        { icon: <Star className="w-8 h-8" />, title: "خبرة 12 عام", desc: "خبرة طويلة في تنظيم رحلات العمرة" },
         { icon: <Shield className="w-8 h-8" />, title: "أمان وثقة", desc: "شركة مرخصة ومعتمدة من الجهات الرسمية" },
         { icon: <Award className="w-8 h-8" />, title: "أسعار تنافسية", desc: "أفضل الأسعار مع جودة عالية في الخدمات" },
         { icon: <Users className="w-8 h-8" />, title: "خدمة شخصية", desc: "اهتمام فردي بكل حاج ومعتمر" },
@@ -75,7 +69,7 @@ const HajjUmrahLanding = () => {
                         animationDuration: `${3 + Math.random() * 4}s`
                     }}
                 >
-                    <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full opacity-70"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full opacity-40"></div>
                 </div>
             ))}
         </div>
@@ -84,36 +78,31 @@ const HajjUmrahLanding = () => {
     const AnimatedKaaba = () => (
         <div className="relative">
             <div className="w-80 h-80 mx-auto relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 rounded-full opacity-20 animate-pulse"></div>
-                <div className="absolute inset-8 bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 rounded-full opacity-30 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                <div className="absolute inset-16 bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 rounded-full opacity-40 animate-pulse" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 rounded-full opacity-10 animate-pulse"></div>
+                <div className="absolute inset-8 bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 rounded-full opacity-15 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                <div className="absolute inset-16 bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 rounded-full opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
 
-                {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-          <div className="w-32 h-32 bg-gray-900 rounded-lg relative shadow-2xl border-4 border-yellow-400 animate-float">
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-4 bg-gradient-to-r from-yellow-400 via-amber-500 to-red-600 rounded-full shadow-lg"></div>
-            <div className="absolute -top-2 -left-2 w-2 h-2 bg-yellow-400 rounded-full animate-twinkle"></div>
-            <div className="absolute -top-1 -right-3 w-1 h-1 bg-amber-500 rounded-full animate-twinkle" style={{animationDelay: '0.5s'}}></div>
-            <div className="absolute -bottom-3 -left-1 w-1.5 h-1.5 bg-yellow-500 rounded-full animate-twinkle" style={{animationDelay: '1s'}}></div>
-            <div className="absolute -bottom-2 -right-2 w-2 h-2 bg-amber-400 rounded-full animate-twinkle" style={{animationDelay: '1.5s'}}></div>
-          </div>
-        </div> */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                    <Image src="/images/logo.png" alt="Kaaba" width={1000} height={1000} className='w-96 h-40' />
+                    {/* <div className="w-96 h-40 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-2xl shadow-2xl flex items-center justify-center">
+                        <span className="text-6xl">🕋</span>
+                    </div> */}
+                    {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"> */}
+                        <Image src="/images/logo.png" alt="Kaaba" width={1000} height={1000} className='w-96 h-40' />
+                    {/* </div> */}
                 </div>
             </div>
         </div>
     );
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white overflow-x-hidden" dir="rtl">
+        <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 text-gray-900 overflow-x-hidden" dir="rtl">
             {/* Header */}
-            <header className="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-xl border-b border-yellow-400/30">
+            <header className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-gray-200 shadow-lg">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center space-x-reverse space-x-4">
-                            {/* <div className="text-2xl">🕋</div> */}
-                            <Image src="/images/logo.png" alt="Kaaba" width={1000} height={1000} className='w-16 h-16 ' />
-                            <div className="text-xl font-bold bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent">
+                            <div className="text-2xl">🕋</div>
+                            <div className="text-xl font-bold bg-gradient-to-r from-yellow-600 to-amber-700 bg-clip-text text-transparent">
                                 الضمان للسياحة و الاسفار
                             </div>
                         </div>
@@ -123,7 +112,7 @@ const HajjUmrahLanding = () => {
                                 <a
                                     key={index}
                                     href={`#${['home', 'services', 'features', 'contact'][index]}`}
-                                    className="text-white hover:text-yellow-400 transition-all duration-300 relative group"
+                                    className="text-gray-700 hover:text-yellow-600 transition-all duration-300 relative group font-medium"
                                 >
                                     {item}
                                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-amber-500 transition-all duration-300 group-hover:w-full"></span>
@@ -140,26 +129,26 @@ const HajjUmrahLanding = () => {
 
             {/* Hero Section */}
             <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-red-900/30 via-transparent to-yellow-500/20"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 via-white to-amber-50"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-red-50/30 via-transparent to-yellow-50/20"></div>
                 <FloatingParticles />
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="space-y-8 text-center lg:text-right">
                             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                                <span className="bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 bg-clip-text text-transparent animate-gradient">
+                                <span className="bg-gradient-to-r from-yellow-600 via-amber-700 to-yellow-800 bg-clip-text text-transparent animate-gradient">
                                     رحلة مقدسة
                                 </span>
                                 <br />
-                                <span className="text-white">إلى بيت الله الحرام</span>
+                                <span className="text-gray-800">إلى بيت الله الحرام</span>
                             </h1>
 
-                            <p className="text-xl md:text-2xl text-yellow-400 font-medium">
+                            <p className="text-xl md:text-2xl text-yellow-700 font-medium">
                                 أداء العمرة بأمان وراحة تامة
                             </p>
 
-                            <p className="text-lg text-gray-300 leading-relaxed max-w-2xl">
+                            <p className="text-lg text-gray-600 leading-relaxed max-w-2xl">
                                 نحن نقدم خدمات العمرة بأعلى معايير الجودة والراحة. رحلتك المقدسة تبدأ معنا بتجربة لا تُنسى مليئة بالطمأنينة والاهتمام بكل التفاصيل المقدسة.
                             </p>
 
@@ -171,7 +160,7 @@ const HajjUmrahLanding = () => {
                                     <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                                 </button>
 
-                                <button className="group border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900 px-8 py-4 rounded-full font-bold text-lg transform hover:scale-105 transition-all duration-300">
+                                <button className="group border-2 border-yellow-600 text-yellow-700 hover:bg-yellow-600 hover:text-white px-8 py-4 rounded-full font-bold text-lg transform hover:scale-105 transition-all duration-300 shadow-lg">
                                     <span className="flex items-center justify-center gap-2">
                                         <Phone className="w-5 h-5" />
                                         تواصل معنا
@@ -187,21 +176,21 @@ const HajjUmrahLanding = () => {
                 </div>
 
                 <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                    <ChevronDown className="w-8 h-8 text-yellow-400" />
+                    <ChevronDown className="w-8 h-8 text-yellow-600" />
                 </div>
             </section>
 
             {/* Services Section */}
             <section id="services" className="py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100"></div>
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                            <span className="bg-gradient-to-r from-yellow-400 via-amber-500 to-red-600 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-yellow-600 via-amber-700 to-red-700 bg-clip-text text-transparent">
                                 خدماتنا المتميزة
                             </span>
                         </h2>
-                        <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             نقدم مجموعة شاملة من الخدمات لضمان رحلة حج وعمرة مباركة ومريحة
                         </p>
                     </div>
@@ -210,20 +199,20 @@ const HajjUmrahLanding = () => {
                         {services.map((service, index) => (
                             <div
                                 key={index}
-                                className="group relative bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:border-yellow-400/50 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/20"
+                                className="group relative bg-white/70 backdrop-blur-xl rounded-3xl p-8 border border-gray-200 hover:border-yellow-400/50 transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-yellow-400/20"
                             >
-                                <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/10 to-red-600/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/5 to-red-600/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                                 <div className="relative z-10">
                                     <div className="text-6xl mb-6 text-center group-hover:animate-bounce">
                                         {service.icon}
                                     </div>
 
-                                    <h3 className="text-2xl font-bold mb-4 text-center bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent">
+                                    <h3 className="text-2xl font-bold mb-4 text-center bg-gradient-to-r from-yellow-600 to-amber-700 bg-clip-text text-transparent">
                                         {service.title}
                                     </h3>
 
-                                    <p className="text-gray-300 text-center leading-relaxed">
+                                    <p className="text-gray-600 text-center leading-relaxed">
                                         {service.description}
                                     </p>
 
@@ -241,15 +230,15 @@ const HajjUmrahLanding = () => {
 
             {/* Features Section */}
             <section id="features" className="py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 via-gray-900 to-yellow-900/20"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-red-50/30 via-white to-yellow-50/30"></div>
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                            <span className="bg-gradient-to-r from-red-600 via-red-500 to-yellow-400 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-red-700 via-red-600 to-yellow-600 bg-clip-text text-transparent">
                                 لماذا تختارنا؟
                             </span>
                         </h2>
-                        <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             نحن نتميز بالخبرة والمصداقية والالتزام بتقديم أفضل الخدمات
                         </p>
                     </div>
@@ -258,20 +247,20 @@ const HajjUmrahLanding = () => {
                         {features.map((feature, index) => (
                             <div
                                 key={index}
-                                className="group relative bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/10 hover:border-red-500/50 transition-all duration-500 hover:transform hover:scale-105 text-center"
+                                className="group relative bg-white/70 backdrop-blur-xl rounded-2xl p-8 border border-gray-200 hover:border-red-400/50 transition-all duration-500 hover:transform hover:scale-105 text-center shadow-lg hover:shadow-xl"
                             >
-                                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 to-yellow-400/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="absolute inset-0 bg-gradient-to-br from-red-600/5 to-yellow-400/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                                 <div className="relative z-10">
-                                    <div className="text-yellow-400 mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <div className="text-yellow-600 mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
                                         {feature.icon}
                                     </div>
 
-                                    <h3 className="text-xl font-bold mb-3 text-yellow-400">
+                                    <h3 className="text-xl font-bold mb-3 text-yellow-700">
                                         {feature.title}
                                     </h3>
 
-                                    <p className="text-gray-300 text-sm leading-relaxed">
+                                    <p className="text-gray-600 text-sm leading-relaxed">
                                         {feature.desc}
                                     </p>
                                 </div>
@@ -283,19 +272,19 @@ const HajjUmrahLanding = () => {
 
             {/* Contact Section */}
             <section id="contact" className="py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100"></div>
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                            <span className="bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-yellow-600 to-amber-700 bg-clip-text text-transparent">
                                 تواصل معنا
                             </span>
                         </h2>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-12">
-                        <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10">
-                            <h3 className="text-2xl font-bold mb-8 text-yellow-400">معلومات التواصل</h3>
+                        <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-8 border border-gray-200 shadow-xl">
+                            <h3 className="text-2xl font-bold mb-8 text-yellow-700">معلومات التواصل</h3>
 
                             <div className="space-y-6">
                                 <div className="flex items-center gap-4">
@@ -303,27 +292,27 @@ const HajjUmrahLanding = () => {
                                         <MapPin className="w-6 h-6 text-white" />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-yellow-400">العنوان</h4>
-                                        <p className="text-gray-300">  حمادي ، بومرداس</p>
+                                        <h4 className="font-semibold text-yellow-700">العنوان</h4>
+                                        <p className="text-gray-600">حمادي ، بومرداس</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center">
+                                    <div className="w-12 h-12 bg-gradient-to-r from-yellow-600 to-amber-700 rounded-full flex items-center justify-center">
                                         <Phone className="w-6 h-6 text-white" />
                                     </div>
-                                    <div >
-                                        <h4 className="font-semibold text-yellow-400">الهاتف</h4>
-                                        <p dir='rtl' className="text-gray-300">0550836251 </p>
+                                    <div>
+                                        <h4 className="font-semibold text-yellow-700">الهاتف</h4>
+                                        <p dir='rtl' className="text-gray-600">0550836251</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center">
+                                    <div className="w-12 h-12 bg-gradient-to-r from-yellow-600 to-amber-700 rounded-full flex items-center justify-center">
                                         <Phone className="w-6 h-6 text-white" />
                                     </div>
-                                    <div >
-                                        <h4 className="font-semibold text-yellow-400">الهاتف</h4>
-                                        <p dir='rtl' className="text-gray-300">0771860242 </p>
+                                    <div>
+                                        <h4 className="font-semibold text-yellow-700">الهاتف</h4>
+                                        <p dir='rtl' className="text-gray-600">0771860242</p>
                                     </div>
                                 </div>
 
@@ -332,69 +321,69 @@ const HajjUmrahLanding = () => {
                                         <Mail className="w-6 h-6 text-white" />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-yellow-400">البريد الإلكتروني</h4>
-                                        <p className="text-gray-300">edamaneomra@gmail.com</p>
+                                        <h4 className="font-semibold text-yellow-700">البريد الإلكتروني</h4>
+                                        <p className="text-gray-600">edamaneomra@gmail.com</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center">
+                                    <div className="w-12 h-12 bg-gradient-to-r from-yellow-600 to-amber-700 rounded-full flex items-center justify-center">
                                         <Clock className="w-6 h-6 text-white" />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-yellow-400">ساعات العمل</h4>
-                                        <p className="text-gray-300">السبت - الخميس: 8:00 - 18:00</p>
+                                        <h4 className="font-semibold text-yellow-700">ساعات العمل</h4>
+                                        <p className="text-gray-600">السبت - الخميس: 8:00 - 18:00</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10">
-                            <h3 className="text-2xl font-bold mb-8 text-yellow-400">احجز استشارة مجانية</h3>
+                        <div className="bg-white/80 backdrop-blur-xl rounded-3xl p-8 border border-gray-200 shadow-xl">
+                            <h3 className="text-2xl font-bold mb-8 text-yellow-700">احجز استشارة مجانية</h3>
 
                             <form className="space-y-6">
                                 <div>
-                                    <label className="block text-yellow-400 font-semibold mb-2">الاسم الكامل</label>
+                                    <label className="block text-yellow-700 font-semibold mb-2">الاسم الكامل</label>
                                     <input
                                         type="text"
-                                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition-colors"
+                                        className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-300 text-gray-800 placeholder-gray-500 focus:outline-none focus:border-yellow-500 transition-colors"
                                         placeholder="أدخل اسمك الكامل"
                                     />
                                 </div>
 
                                 <div>
-                                    <label className="block text-yellow-400 font-semibold mb-2">رقم الهاتف</label>
+                                    <label className="block text-yellow-700 font-semibold mb-2">رقم الهاتف</label>
                                     <input
                                         type="tel"
-                                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition-colors"
+                                        className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-300 text-gray-800 placeholder-gray-500 focus:outline-none focus:border-yellow-500 transition-colors"
                                         placeholder="أدخل رقم الهاتف"
                                     />
                                 </div>
 
                                 <div>
-                                    <label className="block text-yellow-400 font-semibold mb-2">البريد الإلكتروني</label>
+                                    <label className="block text-yellow-700 font-semibold mb-2">البريد الإلكتروني</label>
                                     <input
                                         type="email"
-                                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition-colors"
+                                        className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-300 text-gray-800 placeholder-gray-500 focus:outline-none focus:border-yellow-500 transition-colors"
                                         placeholder="أدخل البريد الإلكتروني"
                                     />
                                 </div>
 
                                 <div>
-                                    <label className="block text-yellow-400 font-semibold mb-2">نوع الخدمة</label>
-                                    <select className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-yellow-400 transition-colors">
+                                    <label className="block text-yellow-700 font-semibold mb-2">نوع الخدمة</label>
+                                    <select className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-300 text-gray-800 focus:outline-none focus:border-yellow-500 transition-colors">
                                         <option value="">اختر نوع الخدمة</option>
-                                        <option value="hajj">الحج</option>
+                                        {/* <option value="hajj">الحج</option> */}
                                         <option value="umrah">العمرة</option>
                                         <option value="both">العمرة</option>
                                     </select>
                                 </div>
 
                                 <div>
-                                    <label className="block text-yellow-400 font-semibold mb-2">رسالتك</label>
+                                    <label className="block text-yellow-700 font-semibold mb-2">رسالتك</label>
                                     <textarea
                                         rows={4}
-                                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400 transition-colors resize-none"
+                                        className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-300 text-gray-800 placeholder-gray-500 focus:outline-none focus:border-yellow-500 transition-colors resize-none"
                                         placeholder="اكتب رسالتك هنا..."
                                     ></textarea>
                                 </div>
@@ -412,36 +401,36 @@ const HajjUmrahLanding = () => {
             </section>
 
             {/* Footer */}
-            <footer className="bg-gray-900 border-t border-yellow-400/30 py-12">
+            <footer className="bg-gray-100 border-t border-gray-300 py-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-3 gap-8 mb-8">
                         <div>
                             <div className="flex items-center gap-3 mb-4">
                                 <div className="text-3xl">🕋</div>
-                                <h3 className="text-xl font-bold text-yellow-400">مكتب العمرة المبارك</h3>
+                                <h3 className="text-xl font-bold text-yellow-700">مكتب العمرة المبارك</h3>
                             </div>
-                            <p className="text-gray-400 leading-relaxed">
+                            <p className="text-gray-600 leading-relaxed">
                                 نحن نقدم خدمات العمرة بأعلى معايير الجودة والأمان. رحلتك المقدسة تبدأ معنا.
                             </p>
                         </div>
 
                         <div>
-                            <h3 className="text-xl font-bold text-yellow-400 mb-4">خدماتنا</h3>
-                            <ul className="space-y-2 text-gray-400">
-                                <li className="hover:text-yellow-400 cursor-pointer transition-colors">رحلات الحج</li>
-                                <li className="hover:text-yellow-400 cursor-pointer transition-colors">رحلات العمرة</li>
-                                <li className="hover:text-yellow-400 cursor-pointer transition-colors">الإقامة الفندقية</li>
-                                <li className="hover:text-yellow-400 cursor-pointer transition-colors">الطيران والنقل</li>
+                            <h3 className="text-xl font-bold text-yellow-700 mb-4">خدماتنا</h3>
+                            <ul className="space-y-2 text-gray-600">
+                                {/* <li className="hover:text-yellow-600 cursor-pointer transition-colors">رحلات الحج</li> */}
+                                <li className="hover:text-yellow-600 cursor-pointer transition-colors">رحلات العمرة</li>
+                                <li className="hover:text-yellow-600 cursor-pointer transition-colors">الإقامة الفندقية</li>
+                                <li className="hover:text-yellow-600 cursor-pointer transition-colors">الطيران والنقل</li>
                             </ul>
                         </div>
 
                         <div>
-                            <h3 className="text-xl font-bold text-yellow-400 mb-4">تابعنا</h3>
+                            <h3 className="text-xl font-bold text-yellow-700 mb-4">تابعنا</h3>
                             <div className="flex gap-4">
                                 <div className="w-10 h-10 bg-gradient-to-r from-red-600 to-red-800 rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
                                     <span className="text-white font-bold">f</span>
                                 </div>
-                                <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
+                                <div className="w-10 h-10 bg-gradient-to-r from-yellow-600 to-amber-700 rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
                                     <span className="text-white font-bold">t</span>
                                 </div>
                                 <div className="w-10 h-10 bg-gradient-to-r from-red-600 to-red-800 rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform">
@@ -451,41 +440,41 @@ const HajjUmrahLanding = () => {
                         </div>
                     </div>
 
-                    <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-                        <p>&copy; 2024     الضمان للسياحة و الاسفار. جميع الحقوق محفوظة.</p>
+                    <div className="border-t border-gray-300 pt-8 text-center text-gray-600">
+                        <p>&copy; 2024 الضمان للسياحة و الاسفار. جميع الحقوق محفوظة.</p>
                     </div>
                 </div>
             </footer>
 
             <style jsx>{`
-        @keyframes gradient {
-          0%, 100% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-        }
-        
-        @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-20px); }
-        }
-        
-        @keyframes twinkle {
-          0%, 100% { opacity: 0.3; }
-          50% { opacity: 1; }
-        }
-        
-        .animate-gradient {
-          background-size: 200% 200%;
-          animation: gradient 3s ease infinite;
-        }
-        
-        .animate-float {
-          animation: float 3s ease-in-out infinite;
-        }
-        
-        .animate-twinkle {
-          animation: twinkle 2s ease-in-out infinite;
-        }
-      `}</style>
+                @keyframes gradient {
+                    0%, 100% { background-position: 0% 50%; }
+                    50% { background-position: 100% 50%; }
+                }
+                
+                @keyframes float {
+                    0%, 100% { transform: translateY(0px); }
+                    50% { transform: translateY(-20px); }
+                }
+                
+                @keyframes twinkle {
+                    0%, 100% { opacity: 0.3; }
+                    50% { opacity: 1; }
+                }
+                
+                .animate-gradient {
+                    background-size: 200% 200%;
+                    animation: gradient 3s ease infinite;
+                }
+                
+                .animate-float {
+                    animation: float 3s ease-in-out infinite;
+                }
+                
+                .animate-twinkle {
+                    animation: twinkle 2s ease-in-out infinite;
+                }
+            `}</style>
         </div>
     );
 };
